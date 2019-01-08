@@ -1,0 +1,30 @@
+﻿<Application x:Class="CandidateTest.Presentation.Wpf.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:views="clr-namespace:CandidateTest.Presentation.Wpf.Views"
+             xmlns:viewModels="clr-namespace:CandidateTest.Presentation.Wpf.ViewModels.TaskViewModels">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/CandidateTest.Presentation.Wpf;component/Views/ResourceDictionaries/Colors.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/CandidateTest.Presentation.Wpf;component/Views/ResourceDictionaries/Slider.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/CandidateTest.Presentation.Wpf;component/Views/ResourceDictionaries/TextBlock.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/CandidateTest.Presentation.Wpf;component/Views/ResourceDictionaries/MainWindow/Title.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/CandidateTest.Presentation.Wpf;component/Views/ResourceDictionaries/MainWindow/Buttons/Path.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/CandidateTest.Presentation.Wpf;component/Views/ResourceDictionaries/MainWindow/ResizeGrip.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/CandidateTest.Presentation.Wpf;component/Views/ResourceDictionaries/MainWindow/Buttons/MainWindowButton.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/CandidateTest.Presentation.Wpf;component/Views/ResourceDictionaries/MainWindow/MainWindow.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/CandidateTest.Presentation.Wpf;component/Views/ResourceDictionaries/Button.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <DataTemplate DataType="{x:Type viewModels:Task3ViewModel}">
+                <views:Task3View/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModels:Task4ViewModel}">
+                <views:Task4View/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModels:Task5ViewModel}">
+                <views:Task5View/>
+            </DataTemplate>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
